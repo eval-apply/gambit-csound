@@ -7,6 +7,14 @@
               csound-start
               csound-stop
               csound-cleanup
+              csound-get-sr
+              csound-get-kr
+              csound-get-ksmps
+              csound-get-nchnls
+              csound-get-nchnls-input
+              csound-get-0dbfs
+              csound-get-a4
+              csound-get-current-time-samples
               csound-option-set!
               csound-compile-orc
               csound-read-score

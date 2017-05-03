@@ -44,6 +44,30 @@ EOF
 (define csound-cleanup
   (c-lambda (csound-ctx*) int "csoundCleanup"))
 
+(define csound-get-sr
+  (c-lambda (csound-ctx*) float "csoundGetSr"))
+
+(define csound-get-kr
+  (c-lambda (csound-ctx*) float "csoundGetKr"))
+
+(define csound-get-ksmps
+  (c-lambda (csound-ctx*) unsigned-int "csoundGetKsmps"))
+
+(define csound-get-nchnls
+  (c-lambda (csound-ctx*) float "csoundGetNchnls"))
+
+(define csound-get-nchnls-input
+  (c-lambda (csound-ctx*) unsigned-int "csoundGetNchnlsInput"))
+
+(define csound-get-0dbfs
+  (c-lambda (csound-ctx*) float "csoundGet0dBFS"))
+
+(define csound-get-a4
+  (c-lambda (csound-ctx*) float "csoundGetA4"))
+
+(define csound-get-current-time-samples
+  (c-lambda (csound-ctx*) long "csoundGetCurrentTimeSamples"))
+
 (define csound-option-set!
   (c-lambda (csound-ctx* char-string) void "csoundSetOption"))
 
